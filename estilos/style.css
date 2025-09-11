@@ -43,3 +43,19 @@ iframe#tela {
     height: 375px;
 }
 
+section#redes-sociais {
+    text-align: right;
+}
+/*Se eu colocasse section > img ia dar erro, porque quando adiciono o '>' eu pego as img que estao imediatamente dentro da section, pois se ela estiver dentro de uma div'por exemplo' nao funcionar, então em casos em que o elemento 'uma img por exemplo' vai estar dentro de outros elementos div, a, p etc' não se deve usar '>' por ela não estar imediatamente dentro da elemento*/
+section#redes-sociais img{
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.400);
+}
+
+section#redes-sociais img:hover {
+    border: 2px solid white;
+    /*box-sizing: border-box;faz com que a borda faça parte */
+}
